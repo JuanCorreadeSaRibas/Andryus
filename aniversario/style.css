@@ -1,0 +1,124 @@
+/* Efeito de rolagem suave e travamento por seção */
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  padding: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  text-align: center;
+}
+
+.img-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.hero {
+  background: #0d17ad;
+  color: white;
+}
+.timeline {
+  background: #f0f0f0;
+}
+.surprise {
+  background: #5e00f5;
+  color: white;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Animação básica de fade-in */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*Carrossel*/
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  display: none;
+  text-align: center;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+button#gift-btn{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

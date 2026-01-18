@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Feliz Aniversário!</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <section class="hero">
+        <h1 class="reveal">Hoje é um dia especial...</h1>
+        <p class="reveal">Role para baixo para descobrir por quê.</p>
+    </section>
+
+    <section class="timeline">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item reveal active">
+                    <p>Ei Você aí</p>
+                    <div class="img-container"><img src="imagens/voceai.jpg" alt="Momento 1"></div>
+                </div>
+                <div class="carousel-item reveal">
+                    <p>Você mesmo!</p>
+                    <div class="img-container"><img src="imagens/eivoce.jpg" alt="Momento 2"></div>
+                </div>
+                <div class="carousel-item reveal">
+                    <p>O cara das posições</p>
+                    <div class="img-container"><img src="imagens/tryingtoholdon.jpg" alt="Momento 3"></div>
+                </div>
+                <div class="carousel-item reveal">
+                    <p>O <strong>SENHOR RESENHA</strong></p>
+                    <div class="img-container"><img src="imagens/cinema.jpg" alt="Momento 4"></div>
+                </div>
+                <div class="carousel-item reveal">
+                    <p>Parece que hoje é o seu dia, não é mesmo?!</p>
+                    <div class="img-container"><img src="imagens/son.jpg" alt="Momento 5"></div>
+                </div>
+                <div class="carousel-item reveal">
+                    <p>O mister <i>ângulos</i></p>
+                    <div class="img-container"><img src="imagens/judging.jpg" alt="Momento 6"></div>
+                </div>
+                <div class="carousel-item reveal">
+                    <p>Usuário de [Insira Gênero]</p>
+                    <div class="img-container"><img src="imagens/standing.jpg" alt="Momento 7"></div>
+                </div>
+                <div class="carousel-item reveal">
+                    <p>O encarador de Almas</p>
+                    <div class="img-container"><img src="imagens/staring.jpg" alt="Momento 8"></div>
+                </div>
+                <div class="carousel-item reveal">
+                    <p>SIGMA</p>
+                    <div class="img-container"><img src="imagens/SIGMA.jpg" alt="Momento 9"></div>
+                </div>
+                <div class="carousel-item reveal">
+                    <p>Capa de album</p>
+                    <div class="img-container"><img src="imagens/albumPoster.jpg" alt="Momento 10"></div>
+                </div>
+                <div class="carousel-item reveal">
+                    <p>Relaxe um pouco hoje</p>
+                    <div class="img-container"><img src="imagens/relaxing.jpg" alt="Momento 11"></div>
+                </div>
+                <div class="carousel-item reveal">
+                    <p>Porque isso só acontece uma vez por ano né?</p>
+                    <div class="img-container"><img src="imagens/son2.jpg" alt="Momento 12"></div>
+                </div>
+                <div class="carousel-item reveal">
+                    <p>O cara que jogou TODOS OS <span><I>POKEMONS</I></span></p>
+                    <div class="img-container"><img src="imagens/alpha.jpg" alt="Momento 13"></div>
+                </div>
+            </div>
+            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+    </section>
+
+    <section class="surprise">
+        <button id="gift-btn">CLIQUE PARA A SURPRESA</button>
+        <div id="final-message" class="hidden">
+            <h2 style="text-align: center;">🎉 FELIZ ANIVERSÁRIO! 🎉</h2>
+            <p>Você é um amigo incrível. Que seu ano seja foda!</p>
+            <small style="text-align: center;">já pode ser preso heim</small>
+            
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
